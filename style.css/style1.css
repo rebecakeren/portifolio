@@ -382,6 +382,46 @@ input:checked + label .description {
 }
 
 
+/* Footer */
+footer {
+    background-color: #080066; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto do footer */
+    text-align: center; /* Alinhar o texto ao centro */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+}
+
+.image-footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espaço entre as imagens */
+}
+
+.image-container a{
+    display: flex; /* Usando flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #fff; /* Cor do fundo branco */
+    border-radius: 20px; /* Raio do border */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 20px;
+}
+
+
+.image-container img {
+    width: 80px; /* Define a largura da imagem para 80px */
+    height: auto; /* Mantém a proporção da altura */
+}
+
+.footer-content hr {
+    border-color: #fff; /* Cor da linha */
+    margin: 30px auto 20px; /* Margem inferior da linha */
+    width: 90%; /* Largura da linha */
+}
+
+.footer-content p {
+    font-size: 20px; /* Tamanho do texto */
+}
+
 
 /* Botão de alternar modo claro/escuro */
 .toggle-btn {
