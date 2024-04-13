@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const h1 = document.querySelector(".content h1");
-    const messages = ["Olá, sou a Rebeca Keren.", "Sou Desenvolvedora Web.", "Sou Designer.", "Sou Técnica de Informática."];
+    const messages = ["Olá, sou a Rebeca Keren.", "Sou Desenvolvedora Front-End.", "Sou Designer.", "Sou Técnica de Informática."];
     let messageIndex = 0;
     let charIndex = 0;
 

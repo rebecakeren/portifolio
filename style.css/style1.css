@@ -438,3 +438,120 @@ footer {
     flex-direction: column;
     padding-top: 20px;
 }
+
+/* Adicione estas linhas no final do seu arquivo CSS */
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    /* Menu */
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    /* Apresentação */
+    .apresentacao {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .eu {
+        margin-top: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .eu img {
+        width: 300px;
+    }
+
+    /* Projetos */
+    .proj {
+        margin-top: 50px;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .card > .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card > .row > .icon {
+        margin: 0;
+    }
+
+    .card > .row > .description {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    /* Skills */
+    .skills {
+        margin-top: 50px;
+    }
+
+    .skills .img {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .skill-item {
+        margin: 10px;
+    }
+
+    /* Certificado */
+    .certificado {
+        margin-top: 50px;
+    }
+
+    .certificado .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificado .box {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    /* Footer */
+    .image-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .toggle-btn {
+        left: 10px;
+    }
+}
