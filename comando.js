@@ -29,6 +29,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Inicia o efeito de digitação
     typeMessage();
-    
-});
 
+    // Função para voltar ao topo da página
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Mostrar ou ocultar o botão ao rolar a página
+    window.addEventListener('scroll', function() {
+        const backToTopButton = document.getElementById('back-to-top');
+        const projetosSection = document.getElementById('projetos');
+        const projetosSectionTop = projetosSection.offsetTop;
+
+        if (window.scrollY >= projetosSectionTop) {
+            backToTopButton.style.display = 'flex';
+            setTimeout(() => {
+                backToTopButton.style.opacity = '1';
+            }, 100);
+        } else {
+            backToTopButton.style.opacity = '0';
+            setTimeout(() => {
+                backToTopButton.style.display = 'none';
+            }, 300);
+        }
+    });
+
+    // Adicionar evento de clique no botão
+    document.getElementById('back-to-top').addEventListener('click', scrollToTop);
+});

@@ -117,7 +117,7 @@ nav ul li a {
     float: right;
     text-align: right;
     animation: floatAnimation 4s infinite alternate; /* Animação de flutuação */
-    filter: drop-shadow(-6px 0 8px #ff0f0f);
+    filter: drop-shadow(-6px 0 8px #860a0a);
 }
 
 .eu img{
@@ -140,7 +140,6 @@ nav ul li a {
 
 
 /*Projetos*/
-
 
 .proj {
     width: 100%;
@@ -305,7 +304,6 @@ input:checked + label .description {
 
 /*Certificado*/
 
-
 .certificado {
     text-align: center;
     margin-bottom: 10px;
@@ -374,7 +372,7 @@ input:checked + label .description {
 
 .certificado .box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 40px #1500ff;
+    box-shadow: 0 0 40px #ff0f0f;
 }
 
 .certificado .box:hover span {
@@ -382,6 +380,7 @@ input:checked + label .description {
 }
 
 /* Footer */
+
 footer {
     background-color: #940000; /* Cor de fundo do footer */
     color: #fff; /* Cor do texto do footer */
@@ -422,10 +421,11 @@ footer {
 }
 
 /* Botão de alternar modo claro/escuro */
+
 .toggle-btn {
     position: fixed;
     left: 20px; /* Ajusta a posição esquerda conforme necessário */
-    top: 50%; /* Centraliza verticalmente */
+    top: 45%; /* Centraliza verticalmente */
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -435,4 +435,28 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+}
+
+/* Botão de voltar ao topo */
+
+#back-to-top {
+    position: fixed;
+    bottom: 315px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 2px #fcfcfc;
+    transition: opacity 0.3s;
+}
+
+#back-to-top svg {
+    fill: #000000;
 }

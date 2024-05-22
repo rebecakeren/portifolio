@@ -141,7 +141,6 @@ nav ul li a {
 
 /*Projetos*/
 
-
 .proj {
     width: 100%;
     display: flex;
@@ -383,6 +382,7 @@ input:checked + label .description {
 
 
 /* Footer */
+
 footer {
     background-color: #080066; /* Cor de fundo do footer */
     color: #fff; /* Cor do texto do footer */
@@ -424,10 +424,11 @@ footer {
 
 
 /* Botão de alternar modo claro/escuro */
+
 .toggle-btn {
     position: fixed;
     left: 20px; /* Ajusta a posição esquerda conforme necessário */
-    top: 50%; /* Centraliza verticalmente */
+    top: 45%; /* Centraliza verticalmente */
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -439,119 +440,26 @@ footer {
     padding-top: 20px;
 }
 
-/* Adicione estas linhas no final do seu arquivo CSS */
+/* Botão de voltar ao topo */
 
-/* Estilos para telas menores */
-@media screen and (max-width: 768px) {
-    /* Menu */
-    header {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
+#back-to-top {
+    position: fixed;
+    bottom: 315px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 2px #fcfcfc;
+    transition: opacity 0.3s;
+}
 
-    .logo {
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    nav ul li a {
-        margin-right: 20px;
-        font-size: 16px;
-    }
-
-    /* Apresentação */
-    .apresentacao {
-        margin-top: 100px;
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-
-    .content {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .eu {
-        margin-top: 20px;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .eu img {
-        width: 300px;
-    }
-
-    /* Projetos */
-    .proj {
-        margin-top: 50px;
-    }
-
-    .card {
-        width: 80%;
-        height: auto;
-    }
-
-    .card > .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card > .row > .icon {
-        margin: 0;
-    }
-
-    .card > .row > .description {
-        width: 100%;
-        text-align: center;
-        margin: 20px;
-    }
-
-    /* Skills */
-    .skills {
-        margin-top: 50px;
-    }
-
-    .skills .img {
-        margin: 0;
-        flex-wrap: wrap;
-    }
-
-    .skill-item {
-        margin: 10px;
-    }
-
-    /* Certificado */
-    .certificado {
-        margin-top: 50px;
-    }
-
-    .certificado .content-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .certificado .box {
-        width: 80%;
-        margin: 20px 0;
-    }
-
-    /* Footer */
-    .image-footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .toggle-btn {
-        left: 10px;
-    }
+#back-to-top svg {
+    fill: #000000;
 }
