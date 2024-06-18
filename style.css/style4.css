@@ -238,7 +238,11 @@ input:checked + label .description {
     background-image: url('./gameover.png');
 }
 
-
+/* Adição para garantir a cor do link */
+.description a{
+    color: #fff !important; /* ou a cor desejada */
+    text-decoration: none !important; /* Remove o sublinhado */
+}
 
 /*Skiils*/
 
@@ -435,8 +439,8 @@ footer {
 
 #back-to-top {
     position: fixed;
-    bottom: 315px;
-    right: 20px;
+    bottom: 20px;
+    right: 16px;
     width: 40px;
     height: 40px;
     background-color: #000000;

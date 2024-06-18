@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const h1 = document.querySelector(".content h1");
-    const messages = ["Olá, sou a Rebeca Keren.", "Sou Desenvolvedora Front-End.", "Sou Designer.", "Sou Técnica de Informática."];
+    const messages = ["Olá, sou a Rebeca Keren.", "Desenvolvedora Front-End.", "Designer.", "Técnica de Informática."];
     let messageIndex = 0;
     let charIndex = 0;
 
@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // Mostrar ou ocultar o botão ao rolar a página
     window.addEventListener('scroll', function() {
         const backToTopButton = document.getElementById('back-to-top');
-        const projetosSection = document.getElementById('projetos');
-        const projetosSectionTop = projetosSection.offsetTop;
+        const apresentacaoSection = document.querySelector('.apresentacao');
+        const apresentacaoSectionBottom = apresentacaoSection.offsetTop + apresentacaoSection.offsetHeight;
 
-        if (window.scrollY >= projetosSectionTop) {
+        if (window.scrollY >= apresentacaoSectionBottom) {
             backToTopButton.style.display = 'flex';
             setTimeout(() => {
                 backToTopButton.style.opacity = '1';
